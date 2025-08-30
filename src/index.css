@@ -3,3 +3,109 @@
   padding:0;
   box-sizing:border-box;
 }
+
+body{
+  font-family: "open Sans", sans-serif;
+}
+
+
+main{
+  background-color: #0000;
+  color: #ffff;
+  padding: 20px 0px;
+}
+
+.contaner{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-75{
+  width: 75%;
+}
+
+.col-50{
+  width: 50%;
+}
+
+.col-25{
+ width: 25%;
+}
+
+.col-100{
+  width: 100%;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+#logo-header{
+  padding: 15px;
+}
+
+#menu{
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  height:100%;
+  padding-top: 55px;
+}
+
+
+#menu li{
+  margin: 0px 10px;
+}
+
+#menu li.active{
+  border-bottom: 5px solid #008CF7;
+}
+#menu li.active a{
+  color: #008CF7;
+}
+
+#menu li a {
+  color: #0000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.blue-banner{
+  background-color:#008CF7;
+  padding: 30px 0px;
+}
+
+.icons-list{
+  display: flex;
+  justify-content: space-around;
+}
+.icons-list img{
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+.icons-list span{
+  vertical-align: middle;
+  color:#ffff;
+  text-transform: uppercase;
+}
+
+.middle-footer{
+  width: 400px;
+  background-image: url('../img/footer-bg.jpg');
+}
+
+.background-dc{
+  background-image: url(../img/dc-logo-bg.png);
+  height: 400px;
+}

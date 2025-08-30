@@ -3,11 +3,11 @@ import React from 'react'
 const Header = () => {
   return <Header>
     <div className="Container">
-      <div className="row">
-        <div className="col-50">
+      <div className="row ">
+        <div className="col-25">
         <div id="logo-header"><img src="./img/dc-logo.png" alt="DC Comics" /></div>
         </div>
-        <div className="col-50">
+        <div className="col-75">
           <ul id="menu">
             <li><a href="#"></a>CHARACTERS</li>
             <li className="active"><a href="#"></a>COMICS</li>
