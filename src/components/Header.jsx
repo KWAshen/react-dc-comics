@@ -1,6 +1,69 @@
 import React from 'react'
 
 const Header = () => {
+  const menu =[
+  {
+    id:1,
+    label: "Characters",
+    active: false,
+    href:"#"
+  },
+  {
+    id:2,
+    label: "Comics",
+    active: true,
+    href:"#"
+  },
+  {
+    id:3,
+    label: "Movies",
+    active: false,
+    href:"#"
+  },
+  {
+    id:4,
+    label: "Tv",
+    active: false,
+    href:"#"
+  },
+  {
+    id:5,
+    label: "Games",
+    active: false,
+    href:"#"
+  },
+  {
+    id:6,
+    label: "COLLECTIBLES",
+    active: false,
+    href:"#"
+  },
+  {
+    id:7,
+    label: "VIDEOS",
+    active: false,
+    href:"#"
+  },
+  {
+    id:8,
+    label: "FANS",
+    active: false,
+    href:"#"
+  },
+  {
+    id:9,
+    label: "NEWS",
+    active: false,
+    href:"#"
+  },
+  {
+    id:10,
+    label: "SHOP",
+    active: false,
+    href:"#"
+  },
+  
+]
   return <Header>
     <div className="Container">
       <div className="row ">
@@ -9,7 +72,12 @@ const Header = () => {
         </div>
         <div className="col-75">
           <ul id="menu">
-            <li><a href="#"></a>CHARACTERS</li>
+            {
+              menu.map(link => {
+                const {id, href, label, active } = link;
+                return(<li key={id} className={active ? 'active' : '' }><a href={href}>{label}</a></li>)
+              })}
+            
             <li className="active"><a href="#"></a>COMICS</li>
             <li><a href="#">MOVIES</a></li>
             <li><a href="#">TV</a></li>

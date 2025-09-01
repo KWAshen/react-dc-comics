@@ -157,8 +157,9 @@ const ComicsList = () => {
     <div classname="Container">
       <div className="row">
       {Comics.map(comic =>{
-        return(<div className="col-16" key={id}><div className="Comic-card"><img src={comic.thumb} alt={comic.title} />
-    <h3>{comic.title}</h3>
+        const {id, thumb, title} = comics;
+        return(<div className="col-16" key={id}><div className="Comic-card"><img src={comic.thumb} alt={title} />
+    <h3>{title}</h3>
     </div></div>)
       })}
     </div>
