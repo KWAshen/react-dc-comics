@@ -1,4 +1,4 @@
-import React from "react";
+import ComixList from "./ComicsList";
 
 
 
@@ -7,11 +7,12 @@ const Main = () => {
     <div className="Container">
       <div className="row">
         <div className="col-100">
-          Content goes header
+          <ComicsList />
         </div>
       </div>
     </div>
   </main>
+};
 
-  export default Main; }
+  export default Main; 
   
