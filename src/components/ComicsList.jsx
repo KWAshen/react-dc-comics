@@ -60,7 +60,7 @@ const ComicsList = () => {
       id: 5,
       title: "Batman #56",
       description: "The Dark Knight's looking to drop both the hammer and sickle on the KGBeast. The Russian super-assassin has gone too far, and Batman will stop at nothing to hunt him down. But is the Dark Knight willing to step into the darkness himself to find justice?",
-      thumb: "https://imgs.search.brave.com/3vP5d3cOVOuC0f6Uhm7CkV_qFk5hGj5rE4jK5I6n7dI/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4y/LnBlbmd1aW4uY29t/LmF1L2NvdmVycy9v/cmlnaW5hbC83OTYx/OTQzMTM5OTk4Lmpw/Zw",
+      thumb: "https://imgs.search.brave.com/qMxyCwK99aguaETp4ioxXLrpxwNg2JNBN3Oq7LGAgzM/rs:fit:780:1200:1/g:ce/aHR0cHM6Ly9jZG4u/ZmxpY2tlcmluZ215/dGguY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIwLzEwL0Jh/dG1hbi1XaGl0ZS1L/bmlnaHQtUHJlc2Vu/dHMtSGFybGV5LVF1/aW5uLTEtMS5qcGc",
       price: "$3.99",
       series: "Batman",
       sale_date: "2018-10-03",
@@ -154,10 +154,15 @@ const ComicsList = () => {
     },
   ];
   return 
-    <div classname="Container"><div className="row"></div>
-    <div className="col-16"><div className="Comic-card"><img src="https://imgs.search.brave.com/bf_FlGnymAgmvweY8YiLAcyy600JdSMl_jHpdR3t5ro/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvNTA5/M2IxOTEtZTkzZS00/NTJjLThhYTQtYTEw/ZDY0ZTcxN2E5LjA5/N2UwZWM5NDgzYzky/OGExMjY4Nzk1Nzk2/NTliZWNjLmpwZWc_/b2RuV2lkdGg9NjEy/Jm9kbkhlaWdodD02/MTImb2RuQmc9ZmZm/ZmZm" alt="" />
-    <h3>Catwomen</h3>
-    </div></div></div>;
+    <div classname="Container">
+      <div className="row">
+      {Comics.map(comic =>{
+        return(<div className="col-16" key={id}><div className="Comic-card"><img src={comic.thumb} alt={comic.title} />
+    <h3>{comic.title}</h3>
+    </div></div>)
+      })}
+    </div>
+    </div>;
 };
 
 export default ComicsList;
