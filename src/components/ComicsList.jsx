@@ -153,9 +153,11 @@ const ComicsList = () => {
       writers: ["Joëlle Jones"],
     },
   ];
-  return (
-    <div>Fumetti</div>
-  );
+  return 
+    <div classname="Container"><div className="row"></div>
+    <div className="col-16"><div className="Comic-card"><img src="https://imgs.search.brave.com/bf_FlGnymAgmvweY8YiLAcyy600JdSMl_jHpdR3t5ro/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvNTA5/M2IxOTEtZTkzZS00/NTJjLThhYTQtYTEw/ZDY0ZTcxN2E5LjA5/N2UwZWM5NDgzYzky/OGExMjY4Nzk1Nzk2/NTliZWNjLmpwZWc_/b2RuV2lkdGg9NjEy/Jm9kbkhlaWdodD02/MTImb2RuQmc9ZmZm/ZmZm" alt="" />
+    <h3>Catwomen</h3>
+    </div></div></div>;
 };
 
 export default ComicsList;
