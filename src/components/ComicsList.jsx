@@ -154,7 +154,7 @@ const ComicsList = () => {
     },
   ];
   return 
-    <div classname="Container">
+    (<div classname="Container">
       <div className="row">
       {Comics.map(comic =>{
         const {id, thumb, title} = comics;
@@ -163,7 +163,7 @@ const ComicsList = () => {
     </div></div>)
       })}
     </div>
-    </div>;
+    </div>);
 };
 
 export default ComicsList;
